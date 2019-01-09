@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="promise.js"></script>
+    <script src="gpu.js"></script>
+    <script src="calc.js"></script>
+    <script>
+        // new PromiseTest(function(resolve, reject) {
+        //     resolve(2);
+        // }).then(ret => {
+        //     console.log(ret);
+        //     return 3;
+        // }).then(ret => {
+        //     return new PromiseTest(function(resolve) {
+        //         setTimeout(() => resolve(100), 1000);
+        //     });
+        // }).then(ret => {
+        //     console.log(ret);
+        //     return 4;
+        // });
+
+        var p = new PromiseTest(function(resolve, reject) {
+            setTimeout(() => resolve(2), 1000);
+        });
+
+        p.then(ret => console.log(ret));
+        p.then(ret => console.log(ret));
+    </script>
+</body>
+</html>

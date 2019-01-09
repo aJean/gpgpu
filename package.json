@@ -1,0 +1,31 @@
+{
+  "name": "starts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/posenet": "^0.2.2",
+    "@tensorflow/tfjs": "^0.12.5",
+    "@types/es6-shim": "^0.31.37",
+    "@types/node": "^10.7.0",
+    "dat.gui": "^0.7.1",
+    "stats.js": "^0.17.0",
+    "gpu.js": "^1.6.0"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.22.1",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5"
+  },
+}
